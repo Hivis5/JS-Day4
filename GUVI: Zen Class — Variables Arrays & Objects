@@ -1,0 +1,204 @@
+Task 1: Simple Programs todo for variables
+Declare four variables without assigning values and print them in console
+
+var a;
+var b;
+var c;
+var d;
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+
+
+How to get value of the variable myvar as output
+
+var myvar= 1;
+console.log(myvar);
+
+
+Declare variables to store your first name, last name, marital status, country and age in multiple lines
+
+var firstName = “jane”;
+var lastName = “Doe”;
+var maritalStatus =”single”;
+var country = “India”;
+var age = 21;
+
+
+Declare variables to store your first name, last name, marital status, country and age in a single line
+
+var firstName = “jane” , lastName = “doe” , maritalStatus =“Single” ,  country =“India” , age = 21;
+
+
+5. Declare variables and assign string, boolean, undefined and null data types
+
+A} let x;           // Now x is undefined
+
+B} x = "John";      // Now x is a String
+
+C} let x = 5;
+
+let y = 5;
+let z = 6;
+(x == y)       // Returns true
+(x == z)       // Returns false
+
+D} let car;    // Value is undefined, type is undefined
+
+
+Write 6 statement which provide truthy & falsey values.
+
+function logTruthiness (val) {
+    if (val) {
+        console.log("Truthy!");
+    } else {
+        console.log("Falsy.");
+    }
+}
+
+ 
+    Truthy
+    
+// Outputs: "Truthy!"
+logTruthiness(true);
+ 
+// Outputs: "Truthy!"
+logTruthiness({});
+ 
+// Outputs: "Truthy!"
+logTruthiness([]);
+ 
+// Outputs: "Truthy!"
+logTruthiness("some string");
+ 
+// Outputs: "Truthy!"
+logTruthiness(3.14);
+ 
+// Outputs: "Truthy!"
+logTruthiness(new Date());
+
+ 
+     Falsey
+     
+// Outputs: "Falsy."
+logTruthiness(false);
+ 
+// Outputs: "Falsy."
+logTruthiness(null);
+ 
+// Outputs: "Falsy."
+logTruthiness(undefined);
+ 
+// Outputs: "Falsy."
+logTruthiness(NaN);
+ 
+// Outputs: "Falsy."
+logTruthiness(0);
+ 
+// Outputs: "Falsy."
+logTruthiness("");
+
+Task 2: Simple Programs todo for Operators                                                         
+                                                                                                                   
+Square of a number
+ 
+function squareMyNumber(no){
+    return no ** 2
+}
+ 
+let squared = squareMyNumber(5);
+console.log(" 5 ** 2 = ",squared);
+ 
+Swapping 2 numbers
+
+let a = prompt('Enter the first variable: ');
+let b = prompt('Enter the second variable: ');
+ 
+let temp;
+ 
+temp = a;
+a = b;
+b = temp;
+console.log(`The value of a after swapping: ${a}`);
+console.log(`The value of b after swapping: ${b}`);
+ 
+Addition of 3 numbers
+
+function sum_three(nums)
+{
+  return nums[0] + nums[1] + nums[2];
+}
+ 
+console.log(sum_three([10, 32, 20])); 
+Celsius to Fahrenheit conversion
+function cToF(celsius) 
+{
+  var cTemp = celsius;
+  var cToFahr = cTemp * 9 / 5 + 32;
+  var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+    console.log(message);
+}
+cToF(60);
+Meter to miles
+function mToM(meter) 
+{
+  var mdis = meter;
+  var mToMiles = mdis * 0.000621;
+  var message = mToMiles
+    console.log(message);
+}
+mToM(5000);
+ 
+Calculate Simple Interest
+ 
+function calculate(principal,time,rate)
+{
+ var p = principal
+ var t = time
+ var r = rate
+ var SI = (p*t*r/100);
+ var message = "The interest is "+SI;
+ console.log(message) ;
+}
+calculate(15,12,12);
+ 
+ 
+Give the Actual cost and Sold cost, Calculate Discount Of Product
+function productDiscount(actualPrice, sellPrice)
+{
+  var discountPrice = actualPrice-sellPrice;
+  var discountPercentage = (discountPrice/actualPrice) * 100;
+  var message = 'The Discount Percentage is '+discountPercentage + ' percent';
+  console.log(message);
+}
+productDiscount(100,80);
+ 
+
+ 
+Calculate Batting Average
+ 
+function batAverage(runs,wickets) 
+{
+  var runsScored = runs;
+  var timesOut = wickets;
+  var battingAverage = runsScored / timesOut;
+ var message = 'The batting Average is '+battingAverage ;
+    console.log(message);
+}
+batAverage(522,27) 
+ 
+Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+function powerConsumed(watt,timeInHrs)
+{
+  var power = watt/1000;
+  var usageTime = timeInHrs * 30;
+  var costPerUnit = 10;
+  var totalBill = power*usageTime*costPerUnit;
+  var message = 'The Electricity cost per month is '+totalBill;
+  console.log(message);
+}
+powerConsumed(100,1)
+ 
+ 
