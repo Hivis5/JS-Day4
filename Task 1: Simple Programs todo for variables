@@ -1,0 +1,100 @@
+Declare four variables without assigning values and print them in console
+
+var a;
+var b;
+var c;
+var d;
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+
+
+How to get value of the variable myvar as output
+
+var myvar= 1;
+console.log(myvar);
+
+
+Declare variables to store your first name, last name, marital status, country and age in multiple lines
+
+var firstName = “jane”;
+var lastName = “Doe”;
+var maritalStatus =”single”;
+var country = “India”;
+var age = 21;
+
+
+Declare variables to store your first name, last name, marital status, country and age in a single line
+
+var firstName = “jane” , lastName = “doe” , maritalStatus =“Single” ,  country =“India” , age = 21;
+
+
+5. Declare variables and assign string, boolean, undefined and null data types
+
+A} let x;           // Now x is undefined
+
+B} x = "John";      // Now x is a String
+
+C} let x = 5;
+
+let y = 5;
+let z = 6;
+(x == y)       // Returns true
+(x == z)       // Returns false
+
+D} let car;    // Value is undefined, type is undefined
+
+
+Write 6 statement which provide truthy & falsey values.
+
+function logTruthiness (val) {
+    if (val) {
+        console.log("Truthy!");
+    } else {
+        console.log("Falsy.");
+    }
+}
+
+ 
+    Truthy
+    
+// Outputs: "Truthy!"
+logTruthiness(true);
+ 
+// Outputs: "Truthy!"
+logTruthiness({});
+ 
+// Outputs: "Truthy!"
+logTruthiness([]);
+ 
+// Outputs: "Truthy!"
+logTruthiness("some string");
+ 
+// Outputs: "Truthy!"
+logTruthiness(3.14);
+ 
+// Outputs: "Truthy!"
+logTruthiness(new Date());
+
+ 
+     Falsey
+     
+// Outputs: "Falsy."
+logTruthiness(false);
+ 
+// Outputs: "Falsy."
+logTruthiness(null);
+ 
+// Outputs: "Falsy."
+logTruthiness(undefined);
+ 
+// Outputs: "Falsy."
+logTruthiness(NaN);
+ 
+// Outputs: "Falsy."
+logTruthiness(0);
+ 
+// Outputs: "Falsy."
+logTruthiness("");
+ 
